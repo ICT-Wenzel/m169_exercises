@@ -138,7 +138,7 @@ docker buildx build -t my_node_app .
   Verwenden Sie den folgenden Befehl:
 
 ```bash
-docker run -it --rm --name my_node_app_container -p 3000:3000 -p 3001:3001 -v .:/usr/src/app my_node_app
+docker run -it --rm --name my_node_app_container -p 3000:3000 -p 3001:3001 -v ./public:/usr/src/app/public my_node_app
 ```
 
 :::tip
